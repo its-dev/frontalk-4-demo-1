@@ -1,0 +1,53 @@
+.SliderSelect
+    position: relative
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: 300px
+    user-select: none
+    border-bottom: 1px solid #000
+    margin-bottom: 10px
+    &__head
+        display: flex
+        align-items: center
+    &__actions
+        margin-left: auto
+    &__title
+        font-size: 1.1em
+        font-weight: bold
+    &__wrap
+        position: relative
+        width: 100%
+        height: 100%
+        overflow: hidden
+    &__body
+        display: flex
+        align-items: center
+        justify-content: center
+        width: max-content
+        height: 100%
+        transition: 0.3s
+    &__slide
+        display: flex
+        align-items: center
+        justify-content: center
+        max-height: 100%
+        img
+            max-width: 80%
+            max-height: 80%
+    &__arr
+        position: absolute
+        top: calc(50% - 20px)
+        display: block
+        width: 40px
+        height: 40px
+        background-color: #aaa
+        cursor: pointer
+        user-select: none
+        transition: 0.3s
+        &.hide
+            display: none
+        &--left
+            left: 0
+        &--right
+            right: 0
